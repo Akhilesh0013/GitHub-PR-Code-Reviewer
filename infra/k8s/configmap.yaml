@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  LANGFUSE_HOST: "https://us.cloud.langfuse.com"
+  REDIS_URL: ""
+  WEBHOOK_SERVICE_URL: "http://webhook:8001"
+  ORCHESTRATOR_SERVICE_URL: "http://orchestrator:8002"
+  REVIEWER_SERVICE_URL: "http://reviewer:8003"
+  LEARNER_SERVICE_URL: "http://learner:8004"
+

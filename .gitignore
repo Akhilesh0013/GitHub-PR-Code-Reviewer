@@ -1,0 +1,34 @@
+# Secrets and credentials
+infra/k8s/secret.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*accessKeys.csv
+*credentials*.json
+*.p12
+*.pfx
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+.vscode/
