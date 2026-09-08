@@ -15,6 +15,12 @@ variable "db_password" {
   sensitive   = true
 }
 
+variable "github_repo" {
+  description = "GitHub repository allowed to assume the CI role, as owner/name"
+  type        = string
+  default     = "Akhilesh0013/GitHub-PR-Code-Reviewer"
+}
+
 variable "environment" {
   description = "Deployment environment"
   type        = string
