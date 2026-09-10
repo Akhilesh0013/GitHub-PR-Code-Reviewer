@@ -1,6 +1,7 @@
 name: Learner CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ["services/learner/**"]

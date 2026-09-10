@@ -1,6 +1,7 @@
 name: Gateway CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ["services/gateway/**"]
