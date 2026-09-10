@@ -1,13 +1,12 @@
 name: Webhook CI/CD
 
 on:
-  workflow_dispatch:
   push:
     branches: [main]
-    paths: ["services/webhook/**", "db/**"]
+    paths: ["services/webhook/**"]
   pull_request:
     branches: [main]
-    paths: ["services/webhook/**", "db/**"]
+    paths: ["services/webhook/**"]
 
 permissions:
   id-token: write
