@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banner.svg" alt="AI PR Reviewer banner" width="100%"/>
+</p>
+
 # AI GitHub PR Code Reviewer
 
 I built an event-driven code review system that automatically reviews GitHub pull requests using multiple specialized LLM agents working in parallel.
@@ -9,6 +13,10 @@ One thing I wanted to get right: the system doesn't just review in isolation. It
 Built as five independent FastAPI microservices with Celery workers, orchestrated by
 [LangGraph](https://langchain-ai.github.io/langgraph/), running on AWS EKS provisioned
 entirely through Terraform.
+
+**Check the Video Demo Here** : [Live Demo](https://drive.google.com/file/d/1t3Gw89OCfneoaLq3DsmdPbNPxQinGkb-/view?usp=sharing)  
+**Grafana Dashboard** : [Video](https://drive.google.com/file/d/1CRnoLamaE6kUY000NVZjDnrevGyyiE3q/view?usp=sharing)
+
 
 ```
 GitHub PR opened  ──▶  4 AI agents review in parallel  ──▶  Inline comments on the PR
